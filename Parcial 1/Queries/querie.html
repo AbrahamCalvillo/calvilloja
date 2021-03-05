@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="iso-8559-1">
+    <title>Queries CSS</title>
+    <link href="estilos.css" type="text/css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <center>
+                <h1><a href="https://www.youtube.com/watch?v=R6o8OKMSMhg">Rolita que fue usada para hacer esta pagina</a></h1>
+            </center>
+        </header>
+
+        <div id="content">
+            <IMG style="float:left; margin: 3px; " border=" " SRC="banner1.png" width="280 " height="140 ">
+            <p>
+                <h1>Media query's</h1><br>En desarrollo web, las media queries son un módulo CSS3 que permite adaptar la representación del contenido a características del dispositivo como la resolución de pantalla (por ejemplo, un smartphone frente a pantallas
+                de alta definición) o la presencia de características de accesibilidad como el braille.<br><br> Se utilizan para : <br> * Aplicar estilos condicionales con las reglas-at @media e @import de CSS.<br> * Indicar medios específicos en los
+                elementos y otros elementos HTML.
+                <br> * Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().
+            </p>
+            <h1>Syntaxis</h1>
+            <p>Las media queries consisten de un tipo de medio opcional y una o más expresiones de características de medios.<br> El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especifica) coincide con el dispositivo en el que
+                se está mostrando el documento y todas las expresiones en el media query son "verdaderas". En este caso, se aplica los estilos correspondientes, siguiendo las reglas usuales de cascada. </p>
+
+            <h1>Media Types</h1>
+            <p>
+                Los Media Types (tipos de medios) describen la categoría general de un dispositivo. Excepto cuando se utilizan los operadores lógicos <mark>not</mark> o <mark>only</mark>, el tipo de medio es opcional y será interpretada como <mark>all</mark>.
+
+                <h3>- all</h3> Apto para todos los dispositivos.<br>
+                <h3>- print</h3> Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión.<br>
+                <h3>- screen</h3> Destinado principalmente a las pantallas.<br>
+                <h3>- speech</h3> Destinado a sintetizadores de voz. </p>
+            <br>
+
+            <h1>Funciones de Medios</h1>
+            <p>
+                Las funciones de medios o Media Features son las características específicas que otorgamos a cada user-agent, navegador o dispositivo de salida. Aunque algunas de las que vamos a enumerar ya están obsoletas, las más importantes son:
+
+                <h3>- witdth</h3> Ancho de la ventana de visualización.<br>
+                <br>
+                <h3>- height</h3> Alto de la ventana de visualización<br>
+                <br>
+                <h3>- aspect-ratio</h3> Relación de aspecto ancho/alto de la ventana de visualización.<br>
+                <br>
+                <h3>- resolution</h3> Densidad de píxeles del dispositivo de salida.<br>
+                <br>
+                <h3>- scan</h3>Proceso de escaneado del dispositivo de salida.<br>
+                <br>
+                <h3>– grid</h3>¿Utiliza el dispositivo una pantalla de cuadrícula o mapa de bits? <br>
+                <br>
+                <h3>– update</h3> ¿Con qué frecuencia el dispositivo de salida puede modificar la apariencia del contenido?<br>
+                <br>
+                <h3>– overflow-block</h3> ¿Cómo maneja el dispositivo de salida el contenido que desborda la vista a lo largo del eje del bloque?<br>
+                <br>
+                <h3>– overflow-inline</h3> ¿Se puede desplazar el contenido que desborda la ventana de visualización a lo largo del eje en línea?<br>
+                <br>
+                <h3>– color</h3> Número de bits por componente de color del dispositivo de salida, o cero si el dispositivo no es de color.<br>
+                <br>
+                <h3>– color-gamut</h3> Rango aproximado de colores que son soportados por el user-agent y el dispositivo de salida.<br>
+                <br>
+                <h3>– color-index</h3> Número de entradas en la tabla de búsqueda de color del dispositivo de salida, o cero si el dispositivo no utiliza dicha tabla.<br>
+                <br>
+                <h3>– display-mode</h3> El modo de visualización de la aplicación.<br>
+                <br>
+                <h3>– monochrome</h3>: Bits por píxel en el búfer de fotogramas monocromo del dispositivo de salida, o cero si el dispositivo no es monocromo.<br>
+                <br>
+                <h3>– inverted-colors</h3> ¿Está invirtiendo colores el agente de usuario o el sistema operativo subyacente?<br>
+                <br>
+                <h3>– pointer</h3> ¿Es el mecanismo de entrada principal un dispositivo señalador y, de ser así, cuán preciso es?<br>
+                <br>
+                <h3>– hover</h3> ¿El mecanismo de entrada principal permite al usuario pasar el ratón por encima de los elementos?<br>
+                <br>
+                <h3>– any-pointer</h3> ¿Es cualquier mecanismo de entrada disponible un dispositivo señalador y, de ser así, cuán preciso es?<br>
+                <br>
+                <h3>– any-hover</h3> ¿Hay algún mecanismo de entrada disponible que permita al usuario pasar el ratón por encima de los elementos?<br>
+                <br>
+                <h3>– light-level</h3> Nivel de luz del entorno.<br>
+                <br>
+                <h3>– prefers-reduced-motion</h3>> El usuario prefiere menos movimiento en la página.<br>
+                <br>
+                <h3>– prefers-reduced-transparency</h3> El usuario prefiere una transparencia reducida.<br>
+                <br>
+                <h3>– prefers-contrast</h3> Detecta si el usuario ha solicitado que el sistema aumente o disminuya la cantidad de contraste entre los colores adyacentes.<br>
+                <br>
+                <h3>– prefers-color-scheme</h3> Detecta si el usuario prefiere un esquema de color claro u oscuro.<br>
+                <br>
+                <h3>– forced-colors</h3>: Detecta si el user-agent restringe la paleta de colores.<br>
+                <br>
+                <h3>- scripting</h3> Detecta si está disponible el scripting (es decir, JavaScript).<br>
+                <br>
+                <h3>– device-width</h3> Ancho de la superficie de renderizado del dispositivo de salida (Obsoleto).<br>
+                <br>
+                <h3>– device-height</h3> Altura de la superficie de renderizado del dispositivo de salida (Obsoleto).<br>
+                <br>
+                <h3>– device-aspect-ratio</h3>: Relación de aspecto ancho/alto del dispositivo de salida (Obsoleto).<br>
+                <br>
+                <h3>- orientation</h3> Orientación de la ventana de visualización .</p><br>
+            <h1>Las medias queries y el diseño responsive</h1>
+            <p>Sin duda, el uso más frecuente las Media Queries es para realizar diseño adaptativo o responsive. El objetivo de utilizar una Media Query en una hoja de estilo CSS en nuestra página web es que se ejecute una regla o un conjunto de reglas si
+                se cumple una condición determinada, como puede ser el ancho máximo de pantalla.<br>
+                <br>
+                <IMG style="float:center; margin: 3px; " border=" " SRC="mediaquery.jpg"> <br>No debemos confundir el diseño responsivo realizado mediante CSS y Media Queries con tener una versión de nuestra web para cada dispositivo. La ventaja principal de utilizar las Media Queries es que partimos de un único diseño principal
+                que se irá adaptando y reajustando en función del navegador, el dispositivo, la pantalla o las preferencias del usuario.<br><br> De esta manera podremos, por ejemplo, realizar un diseño que tenga una columna en dispositivos móviles, dos
+                columnas en tablets y tres columnas en ordenadores portátiles y de sobremesa.<br><br> En las mejores prácticas de diseño responsive se recomienda realizar una maquetación orientada al concepto Mobile First. Esto significa diseñar para
+                móvil antes de diseñar para escritorio o cualquier otro dispositivo (Esto hará que la página se muestre más rápido en dispositivos más pequeños). <br><br>Para ello, debemos hacer algunos cambios en nuestro CSS. En lugar de cambiar de estilo
+                cuando el ancho es inferior a 768px, deberíamos cambiar el diseño cuando el ancho es superior a 768px. Esto hará que nuestro diseño sea Mobile First.</p>
+            <br>
+        </div>
+        <!-- #content -->
+        <footer>Rolita que fue usada para hacer esta pagina
+            <a href="https://www.youtube.com/watch?v=R6o8OKMSMhg"></a>
+        </footer>
+    </div>
+    <!-- #container -->
+</body>
+
+</html>
