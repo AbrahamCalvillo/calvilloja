@@ -1,0 +1,70 @@
+.content {
+    margin-top: 10px;
+}
+
+.content .c1 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: solid 1px #ccc;
+    background: #ddd;
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+.content .c2 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: solid 3px #4a7497;
+    background: #8daac3;
+    margin-top: 20px;
+    margin-left: 50px
+}
+
+.content h2 {
+    font-size: 20px bold;
+    color: #444;
+    border-bottom: solid 1px #444;
+}
+
+@media only screen and (max-width: 600px) {
+    .content .c1 {
+        text-align: center;
+        padding: 8px;
+        margin-bottom: 7px;
+        display: table;
+        text-align: center;
+    }
+    .content .c2 {
+        text-align: center;
+        background-color: #2b5463;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .content .c1 {
+        text-align: center;
+        display: inline;
+    }
+    .content .c2 {
+        text-align: center;
+        background: #8daac3;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* desktop: */
+    .content .c1 {
+        display: table;
+        text-align: center;
+    }
+    .content .c2 {
+        text-align: center;
+        background: #8daac3;
+        width: 25%;
+    }
+}
